@@ -1,0 +1,3 @@
+[submodule "pack/minpac/start/nvim-lspconfig"]
+	path = pack/minpac/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
