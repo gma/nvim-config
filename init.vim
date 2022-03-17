@@ -4,6 +4,7 @@ source ~/.vim/vimrc
 
 source ~/.config/nvim/packages.vim
 
+lua require("completion")
 lua require("lsp")
 
 " Neovim-specific options

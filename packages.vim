@@ -4,6 +4,9 @@ function! PackInit() abort
   call minpac#init({'dir': '/home/graham/.config/nvim'})
 
   " Plugins loaded at start
+  call minpac#add('L3MON4D3/LuaSnip')
+  call minpac#add('hrsh7th/cmp-nvim-lsp', {'rev': 'main'})
+  call minpac#add('hrsh7th/nvim-cmp', {'rev': 'main'})
   call minpac#add('neovim/nvim-lspconfig')
 
   " Optional plugins, load them with `:packadd <name>`
