@@ -33,7 +33,10 @@ cmp.setup({
     { name = "path" },
     { name = 'luasnip' },
     { name = "buffer", keyword_length = 3 },
-  })
+  }),
+  experimental = {
+    ghost_text = true,
+  },
 })
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
