@@ -12,6 +12,7 @@ function! PackInit() abort
   call minpac#add('hrsh7th/cmp-path', {'rev': 'main'})
   call minpac#add('hrsh7th/nvim-cmp', {'rev': 'main'})
   call minpac#add('neovim/nvim-lspconfig')
+  call minpac#add('onsails/lspkind-nvim')
 
   " Optional plugins, load them with `:packadd <name>`
 endfunction

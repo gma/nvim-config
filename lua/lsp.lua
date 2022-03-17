@@ -10,6 +10,13 @@ function default_lsp_keymaps()
   vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {buffer=0})
 end
 
+require'lspconfig'.ansiblels.setup{
+  capabilities = capabilities,
+  on_attach = function()
+    default_lsp_keymaps()
+  end,
+}
+
 require'lspconfig'.gopls.setup{
   capabilities = capabilities,
   on_attach = function()

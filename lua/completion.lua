@@ -2,6 +2,7 @@ vim.opt.completeopt = {"menu", "menuone", "noselect"}
 
 -- Setup nvim-cmp.
 local cmp = require'cmp'
+local lspkind = require('lspkind')
 
 cmp.setup({
   snippet = {
@@ -36,6 +37,18 @@ cmp.setup({
   }),
   experimental = {
     ghost_text = true,
+  },
+  formatting = {
+    format = lspkind.cmp_format {
+      mode = "text",
+      menu = {
+        buffer = "[buf]",
+        luasnip = "[snip]",
+        nvim_lsp = "[LSP]",
+        nvim_lua = "[api]",
+        path = "[path]",
+      },
+    },
   },
 })
 
