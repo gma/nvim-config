@@ -19,3 +19,6 @@
 [submodule "pack/minpac/start/cmp-cmdline"]
 	path = pack/minpac/start/cmp-cmdline
 	url = https://github.com/hrsh7th/cmp-cmdline
+[submodule "pack/minpac/start/cmp-nvim-lua"]
+	path = pack/minpac/start/cmp-nvim-lua
+	url = https://github.com/hrsh7th/cmp-nvim-lua

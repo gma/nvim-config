@@ -8,6 +8,7 @@ function! PackInit() abort
   call minpac#add('hrsh7th/cmp-buffer', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-cmdline', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-nvim-lsp', {'rev': 'main'})
+  call minpac#add('hrsh7th/cmp-nvim-lua', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-path', {'rev': 'main'})
   call minpac#add('hrsh7th/nvim-cmp', {'rev': 'main'})
   call minpac#add('neovim/nvim-lspconfig')
