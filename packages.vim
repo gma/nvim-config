@@ -32,6 +32,7 @@ lua require("telescope-config")
 
 nnoremap <leader>ff :Telescope find_files<CR>
 nnoremap <leader>fg :Telescope git_files<CR>
+nnoremap <leader>fb :Telescope buffers<CR>
 nnoremap <C-_> :Telescope current_buffer_fuzzy_find sorting_strategy=ascending<CR>
 nnoremap <leader>fc :Telescope git_commits<CR>
 nnoremap <leader>fC :Telescope git_bcommits<CR>
