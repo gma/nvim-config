@@ -10,3 +10,4 @@ lua require("lsp")
 " Neovim-specific options
 set laststatus=3          " enable global statusline
 set signcolumn=yes        " show space where signs appear in the gutter
+set termguicolors         " enable 24-bit colour
