@@ -25,3 +25,12 @@
 [submodule "pack/minpac/start/lspkind-nvim"]
 	path = pack/minpac/start/lspkind-nvim
 	url = https://github.com/onsails/lspkind-nvim
+[submodule "pack/minpac/start/plenary.nvim"]
+	path = pack/minpac/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "pack/minpac/start/telescope.nvim"]
+	path = pack/minpac/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "pack/minpac/start/telescope-fzf-native.nvim"]
+	path = pack/minpac/start/telescope-fzf-native.nvim
+	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
