@@ -17,6 +17,13 @@ require'lspconfig'.ansiblels.setup{
   end,
 }
 
+require 'lspconfig'.bashls.setup{
+  capabilities = capabilities,
+  on_attach = function()
+    default_lsp_keymaps()
+  end,
+}
+
 require'lspconfig'.gopls.setup{
   capabilities = capabilities,
   on_attach = function()
