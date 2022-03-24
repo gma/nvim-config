@@ -11,10 +11,9 @@ function lsp_keymaps()
   vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {buffer=0})
 end
 
-local servers = {'ansiblels', 'bashls', 'gopls', 'pyright'}
-
-for _, server in pairs(servers) do
-  require'lspconfig'[server].setup {
+local lsp_installer = require'nvim-lsp-installer'
+lsp_installer.on_server_ready(function(server)
+  server:setup{
     capabilities = capabilities,
     on_attach = function()
       lsp_keymaps()
@@ -23,4 +22,4 @@ for _, server in pairs(servers) do
       debounce_text_changes = 150,
     },
   }
-end
+end)

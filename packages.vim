@@ -16,6 +16,7 @@ function! PackInit() abort
   call minpac#add('nvim-telescope/telescope-fzf-native.nvim', {'rev': 'main', 'do': 'make'})
   call minpac#add('nvim-telescope/telescope.nvim')
   call minpac#add('onsails/lspkind-nvim')
+  call minpac#add('williamboman/nvim-lsp-installer')
 
   " Optional plugins, load them with `:packadd <name>`
 endfunction
