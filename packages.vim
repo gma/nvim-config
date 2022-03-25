@@ -13,6 +13,7 @@ function! PackInit() abort
   call minpac#add('hrsh7th/nvim-cmp', {'rev': 'main'})
   call minpac#add('neovim/nvim-lspconfig')
   call minpac#add('nvim-lua/plenary.nvim')
+  call minpac#add('nvim-telescope/telescope-file-browser.nvim')
   call minpac#add('nvim-telescope/telescope-fzf-native.nvim', {'rev': 'main', 'do': 'make'})
   call minpac#add('nvim-telescope/telescope.nvim')
   call minpac#add('onsails/lspkind-nvim')
@@ -33,7 +34,7 @@ lua require("telescope-config")
 
 nnoremap <leader>ff :Telescope find_files<CR>
 nnoremap <leader>fg :Telescope git_files<CR>
-nnoremap <leader>fb :Telescope buffers<CR>
+nnoremap <leader>b :Telescope buffers<CR>
 nnoremap <C-_> :Telescope current_buffer_fuzzy_find sorting_strategy=ascending<CR>
 nnoremap <leader>fc :Telescope git_commits<CR>
 nnoremap <leader>fC :Telescope git_bcommits<CR>
