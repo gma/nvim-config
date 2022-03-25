@@ -13,7 +13,7 @@ end
 
 local lsp_installer = require'nvim-lsp-installer'
 lsp_installer.on_server_ready(function(server)
-  server:setup{
+  local options = {
     capabilities = capabilities,
     on_attach = function()
       lsp_keymaps()
@@ -22,4 +22,14 @@ lsp_installer.on_server_ready(function(server)
       debounce_text_changes = 150,
     },
   }
+
+  if server.name == 'sumneko_lua' then
+    options.settings = {
+      Lua = {
+        diagnostics = { globals = { 'vim' } }
+      }
+    }
+  end
+
+  server:setup(options)
 end)
