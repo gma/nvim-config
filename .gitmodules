@@ -40,3 +40,6 @@
 [submodule "pack/minpac/start/telescope-file-browser.nvim"]
 	path = pack/minpac/start/telescope-file-browser.nvim
 	url = https://github.com/nvim-telescope/telescope-file-browser.nvim
+[submodule "pack/minpac/start/zen-mode.nvim"]
+	path = pack/minpac/start/zen-mode.nvim
+	url = https://github.com/folke/zen-mode.nvim
