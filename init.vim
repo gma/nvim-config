@@ -10,7 +10,7 @@ lua require("lsp")
 " Neovim-specific options
 highlight WinSeparator guifg=#444444 guibg=None   " window border colour
 
-set laststatus=3          " enable global statusline
+set laststatus=2          " enable global statusline
 set signcolumn=yes        " show space where signs appear in the gutter
 set termguicolors         " enable 24-bit colour
 
