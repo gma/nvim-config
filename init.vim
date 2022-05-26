@@ -24,3 +24,6 @@ function! s:executor() abort
 endfunction
 nnoremap <leader>x :call <SID>executor()<CR>
 vnoremap <leader>x :<C-w>exe join(getline("'<","'>"),'<Bar>')<CR>
+
+" Use system python (where pynvim module is installed)
+let g:python3_host_prog = "/usr/bin/python3"
