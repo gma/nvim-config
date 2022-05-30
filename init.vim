@@ -30,3 +30,4 @@ let g:python3_host_prog = "/usr/bin/python3"
 
 " Configure Neoformat
 let g:neoformat_try_node_exe = 1
+autocmd BufWritePre *.js Neoformat
