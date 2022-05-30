@@ -27,3 +27,6 @@ vnoremap <leader>x :<C-w>exe join(getline("'<","'>"),'<Bar>')<CR>
 
 " Use system python (where pynvim module is installed)
 let g:python3_host_prog = "/usr/bin/python3"
+
+" Configure Neoformat
+let g:neoformat_try_node_exe = 1
