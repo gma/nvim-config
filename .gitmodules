@@ -43,3 +43,6 @@
 [submodule "pack/minpac/start/zen-mode.nvim"]
 	path = pack/minpac/start/zen-mode.nvim
 	url = https://github.com/folke/zen-mode.nvim
+[submodule "pack/minpac/start/neoformat"]
+	path = pack/minpac/start/neoformat
+	url = https://github.com/sbdchd/neoformat
