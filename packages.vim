@@ -16,7 +16,7 @@ function! PackInit() abort
   call minpac#add('nvim-lua/plenary.nvim')
   call minpac#add('nvim-telescope/telescope-file-browser.nvim')
   call minpac#add('nvim-telescope/telescope-fzf-native.nvim', {'rev': 'main', 'do': 'make'})
-  call minpac#add('nvim-telescope/telescope.nvim')
+  call minpac#add('nvim-telescope/telescope.nvim', {'rev': '0.1.x'})
   call minpac#add('onsails/lspkind-nvim')
   call minpac#add('sbdchd/neoformat')
   call minpac#add('williamboman/nvim-lsp-installer')
