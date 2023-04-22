@@ -19,7 +19,8 @@ function! PackInit() abort
   call minpac#add('nvim-telescope/telescope.nvim', {'rev': '0.1.x'})
   call minpac#add('onsails/lspkind-nvim')
   call minpac#add('sbdchd/neoformat')
-  call minpac#add('williamboman/nvim-lsp-installer')
+  call minpac#add('williamboman/mason.nvim', {'rev': 'main'})
+  call minpac#add('williamboman/mason-lspconfig.nvim', {'rev': 'main'})
 
   " Optional plugins, load them with `:packadd <name>`
 endfunction

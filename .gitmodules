@@ -34,9 +34,6 @@
 [submodule "pack/minpac/start/telescope-fzf-native.nvim"]
 	path = pack/minpac/start/telescope-fzf-native.nvim
 	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
-[submodule "pack/minpac/start/nvim-lsp-installer"]
-	path = pack/minpac/start/nvim-lsp-installer
-	url = https://github.com/williamboman/nvim-lsp-installer
 [submodule "pack/minpac/start/telescope-file-browser.nvim"]
 	path = pack/minpac/start/telescope-file-browser.nvim
 	url = https://github.com/nvim-telescope/telescope-file-browser.nvim
@@ -46,3 +43,9 @@
 [submodule "pack/minpac/start/neoformat"]
 	path = pack/minpac/start/neoformat
 	url = https://github.com/sbdchd/neoformat
+[submodule "pack/minpac/start/mason.nvim"]
+	path = pack/minpac/start/mason.nvim
+	url = https://github.com/williamboman/mason.nvim.git
+[submodule "pack/minpac/start/mason-lspconfig.nvim"]
+	path = pack/minpac/start/mason-lspconfig.nvim
+	url = https://github.com/williamboman/mason-lspconfig.nvim.git
