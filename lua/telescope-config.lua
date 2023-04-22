@@ -15,6 +15,7 @@ vim.api.nvim_set_keymap("n", "<leader>fC", ":Telescope commands<CR>", { noremap 
 vim.api.nvim_set_keymap("n", "<leader>fm", ":Telescope keymaps<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>ft", ":Telescope tags<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>fd", ":Telescope diagnostics<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>fc", ":Telescope git_commits<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>fb", ":Telescope git_bcommits<CR>", { noremap = true })
