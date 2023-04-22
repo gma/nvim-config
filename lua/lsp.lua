@@ -11,7 +11,9 @@ function lsp_keymaps()
   vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {buffer=0})
 end
 
-require("nvim-lsp-installer").setup {}
+require("nvim-lsp-installer").setup {
+  automatic_installation = true
+}
 local lspconfig = require("lspconfig")
 
 local function on_attach()
