@@ -11,25 +11,45 @@ function lsp_keymaps()
   vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {buffer=0})
 end
 
-local lsp_installer = require'nvim-lsp-installer'
-lsp_installer.on_server_ready(function(server)
-  local options = {
+require("nvim-lsp-installer").setup {}
+local lspconfig = require("lspconfig")
+
+local function on_attach()
+  lsp_keymaps()
+end
+
+lspconfig.sumneko_lua.setup {
+  capabilities = capabilities,
+  flags = {
+    debounce_text_changes = 150,
+  },
+  on_attach = on_attach,
+  settings = {
+    Lua = {
+      diagnostics = { globals = { 'vim' } }
+    }
+  }
+}
+
+for _, server in ipairs {
+  "ansiblels",
+  "bashls",
+  "cssls",
+  "dockerls",
+  "eslint",
+  "gopls",
+  "html",
+  "pyright",
+  "rust_analyzer",
+  "tsserver",
+  "vimls",
+  "yamlls"
+} do
+  lspconfig[server].setup {
     capabilities = capabilities,
-    on_attach = function()
-      lsp_keymaps()
-    end,
     flags = {
       debounce_text_changes = 150,
     },
+    on_attach = on_attach,
   }
-
-  if server.name == 'sumneko_lua' then
-    options.settings = {
-      Lua = {
-        diagnostics = { globals = { 'vim' } }
-      }
-    }
-  end
-
-  server:setup(options)
-end)
+end
