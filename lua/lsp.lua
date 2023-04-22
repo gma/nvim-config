@@ -1,6 +1,6 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-function lsp_keymaps()
+local function lsp_keymaps()
   vim.keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
   vim.keymap.set("n", "<C-]>", vim.lsp.buf.definition, {buffer=0})
   vim.keymap.set("n", ":Ref<CR>", vim.lsp.buf.references, {buffer=0})
