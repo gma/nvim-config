@@ -4,6 +4,7 @@ source ~/.vim/vimrc
 
 source ~/.config/nvim/packages.vim
 
+lua require("telescope-config")
 lua require("completion")
 lua require("lsp")
 
