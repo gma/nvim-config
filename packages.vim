@@ -5,7 +5,7 @@ function! PackInit() abort
 
   " Plugins loaded at start
   call minpac#add('L3MON4D3/LuaSnip')
-  call minpac#add('folke/zen-mode.nvim')
+  call minpac#add('folke/zen-mode.nvim', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-buffer', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-cmdline', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-nvim-lsp', {'rev': 'main'})
