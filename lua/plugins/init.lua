@@ -39,6 +39,14 @@ return {
 
   -- The rest
   "L3MON4D3/LuaSnip",
+  {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 500
+      require("which-key").setup({})
+    end,
+  },
   "folke/zen-mode.nvim",
   "sbdchd/neoformat",
 }
