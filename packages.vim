@@ -18,6 +18,11 @@ function! PackInit() abort
   call minpac#add('hrsh7th/cmp-nvim-lsp', {'rev': 'main'})
   call minpac#add('hrsh7th/cmp-nvim-lua', {'rev': 'main'})
 
+  " Snippets
+  call minpac#add('L3MON4D3/LuaSnip')
+  call minpac#add('rafamadriz/friendly-snippets')
+  call minpac#add('saadparwaiz1/cmp_luasnip')
+
   " Telescope
   call minpac#add('nvim-lua/plenary.nvim')
   call minpac#add('nvim-telescope/telescope-file-browser.nvim')
@@ -25,7 +30,6 @@ function! PackInit() abort
   call minpac#add('nvim-telescope/telescope.nvim', {'rev': '0.1.x'})
 
   " The rest
-  call minpac#add('L3MON4D3/LuaSnip')
   call minpac#add('folke/zen-mode.nvim', {'rev': 'main'})
   call minpac#add('onsails/lspkind-nvim')
   call minpac#add('sbdchd/neoformat')
