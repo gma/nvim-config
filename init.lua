@@ -7,8 +7,6 @@ require("lazy").setup("plugins", {
   change_detection = { notify = false },
 })
 
-vim.cmd "highlight WinSeparator guifg=#444444 guibg=None"
-
 require("config")
 
 vim.o.laststatus = 2          -- enable global statusline
