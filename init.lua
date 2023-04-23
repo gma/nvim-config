@@ -2,7 +2,10 @@ vim.opt.runtimepath:prepend({"~/.vim","~/.vim/after"})
 vim.opt.packpath:prepend("~/.vim")
 vim.cmd.source "~/.vim/vimrc"
 
-vim.cmd.source "~/.config/nvim/packages.vim"
+require("setup-lazy-nvim")
+require("lazy").setup("plugins", {
+  change_detection = { notify = false },
+})
 
 vim.cmd "highlight WinSeparator guifg=#444444 guibg=None"
 
