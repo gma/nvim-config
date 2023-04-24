@@ -23,20 +23,6 @@ return {
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-nvim-lua",
 
-  -- Telescope
-  {
-    "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope-file-browser.nvim",
-      {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        build = "make"
-      },
-    }
-  },
-
   -- The rest
   "L3MON4D3/LuaSnip",
   {
@@ -48,4 +34,8 @@ return {
     end,
   },
   "folke/zen-mode.nvim",
+  {
+    "nvim-lua/plenary.nvim",
+    lazy = true,
+  },
 }
