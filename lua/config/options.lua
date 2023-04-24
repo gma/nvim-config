@@ -1,5 +1,9 @@
 local opt = vim.opt
 
+-- Vim compatible settings
+--
+-- This block of settings are compatible with Vim 8.
+
 opt.tabstop = 2               -- default size of a real tab stop
 opt.softtabstop = 2           -- pressing tab/backspaces inserts/removes 2 chars
 opt.shiftwidth = 2            -- the number of spaces used by << and >>
@@ -42,3 +46,12 @@ opt.colorcolumn = "81"
 opt.cursorline = true
 
 vim.g.netrw_banner = 0
+
+-- Neovim specific settings
+--
+-- The settings higher up in this file were brought over from my Vim 8
+-- config. The following are only supported by Neovim.
+
+opt.laststatus = 2            -- enable global statusline
+opt.signcolumn = "yes"        -- show space where signs appear in the gutter
+opt.termguicolors = true      -- enable 24-bit colour
