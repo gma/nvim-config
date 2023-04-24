@@ -34,6 +34,19 @@ lspconfig.lua_ls.setup {
   }
 }
 
+lspconfig.yamlls.setup {
+  capabilities = capabilities,
+  flags = {
+    debounce_text_changes = 150,
+  },
+  on_attach = on_attach,
+  settings = {
+    yaml = {
+      keyOrdering = false
+    }
+  }
+}
+
 for _, server in ipairs {
   "ansiblels",
   "bashls",
@@ -46,7 +59,6 @@ for _, server in ipairs {
   "rust_analyzer",
   "tsserver",
   "vimls",
-  "yamlls"
 } do
   lspconfig[server].setup {
     capabilities = capabilities,
