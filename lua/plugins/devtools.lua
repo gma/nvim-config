@@ -15,6 +15,13 @@ return {
   },
   "jremmen/vim-ripgrep",
   "mattn/emmet-vim",
+  {
+    "sbdchd/neoformat",
+    cmd = "Neoformat",
+    config = function()
+      vim.g.neoformat_try_node_exe = 1
+    end,
+  },
   "tpope/vim-commentary",
   {
     "tpope/vim-fugitive",

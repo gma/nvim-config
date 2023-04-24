@@ -2,6 +2,12 @@ local function augroup(name)
   return vim.api.nvim_create_augroup("gma_" .. name, { clear = true })
 end
 
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  group = augroup("neoformat"),
+  pattern = {"*.css", "*.js", "*.ts", "*.tsx"},
+  command = "Neoformat"
+})
+
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   group = augroup("suckless"),
   pattern = "*/suckless/*/config.h",

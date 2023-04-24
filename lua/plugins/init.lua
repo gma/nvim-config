@@ -48,5 +48,4 @@ return {
     end,
   },
   "folke/zen-mode.nvim",
-  "sbdchd/neoformat",
 }
