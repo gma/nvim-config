@@ -1,6 +1,4 @@
-vim.opt.runtimepath:prepend({"~/.vim","~/.vim/after"})
-vim.opt.packpath:prepend("~/.vim")
-vim.cmd.source "~/.vim/vimrc"
+vim.g.mapleader = ","
 
 require("setup-lazy-nvim")
 require("lazy").setup("plugins", {
