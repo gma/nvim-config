@@ -14,7 +14,6 @@ return {
     ft = "sh",
   },
   "jremmen/vim-ripgrep",
-  "mattn/emmet-vim",
   {
     "sbdchd/neoformat",
     cmd = "Neoformat",
