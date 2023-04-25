@@ -6,8 +6,29 @@ local function setup_lsp()
     }
   })
 
+  local function map(lhs, rhs, desc)
+    vim.keymap.set('n', lhs, rhs, { desc = desc, buffer = true })
+  end
+
   lsp.on_attach(function(client, bufnr)
-    lsp.default_keymaps({ buffer = bufnr })
+    map("K", vim.lsp.buf.hover, "Show info in window")
+    map("gd", vim.lsp.buf.definition, "Jump to definition")
+    map("gD", vim.lsp.buf.declaration, "Jump to declaration")
+    map("gi", vim.lsp.buf.implementation, "List implementations in quickfix")
+    map("go", vim.lsp.buf.type_definition, "Jump to definition of type")
+    map("gr", vim.lsp.buf.references, "List references in quickfix")
+    map("gs", vim.lsp.buf.signature_help, "Show signature info in window")
+    map("<F2>", vim.lsp.buf.rename, "Rename symbol")
+    map("<F3>", vim.lsp.buf.format, "Format buffer")
+    map("<F4>", vim.lsp.buf.code_action, "Select code action")
+    map("gl", vim.diagnostic.open_float, "Show diagnostic in window")
+    map("[d", vim.diagnostic.goto_prev, "Move to previous diagnostic")
+    map("]d", vim.diagnostic.goto_next, "Move to next diagnostic")
+
+    -- My preferred alternatives to some defaults
+    map("<leader>r", vim.lsp.buf.rename, "Rename symbol")
+    map("g=", vim.lsp.buf.format, "Format buffer")
+    map("gca", vim.lsp.buf.code_action, "Select code action")
   end)
 
   lsp.setup_servers({
