@@ -42,7 +42,7 @@ opt.wildmenu = true           -- nice tab completion just above the status bar
 opt.wildmode = { list = "full" } -- tab completes common prefix, but lists choices
 opt.wildignore = "tmp/cache/**"
 
-opt.colorcolumn = "81"
+opt.colorcolumn = "80"
 opt.cursorline = true
 
 vim.g.netrw_banner = 0
