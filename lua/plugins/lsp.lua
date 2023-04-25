@@ -41,6 +41,20 @@ local function setup_completion()
       ["<Tab>"] = cmp.mapping.confirm({ select = true }),
     },
   })
+
+  cmp.setup.cmdline("/", {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({ { name = "buffer" } }),
+    view = {
+      entries = {
+        name = "wildmenu",
+      },
+    },
+  })
+  cmp.setup.cmdline(":", {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
+  })
 end
 
 return {
@@ -65,6 +79,7 @@ return {
 
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-cmdline",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-path",
 
