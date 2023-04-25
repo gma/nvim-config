@@ -17,34 +17,29 @@ require("mason-lspconfig").setup {
 }
 local lspconfig = require("lspconfig")
 
-local function on_attach()
-  lsp_keymaps()
-end
-
-lspconfig.lua_ls.setup {
+local default_options = {
   capabilities = capabilities,
   flags = {
     debounce_text_changes = 150,
   },
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      diagnostics = { globals = { 'vim' } }
-    }
-  }
+  on_attach = lsp_keymaps,
 }
 
-lspconfig.yamlls.setup {
-  capabilities = capabilities,
-  flags = {
-    debounce_text_changes = 150,
+local server_settings = {
+  lua_ls = {
+    settings = {
+      Lua = {
+        diagnostics = { globals = { 'vim' } },
+      },
+    },
   },
-  on_attach = on_attach,
-  settings = {
-    yaml = {
-      keyOrdering = false
-    }
-  }
+  yamlls = {
+    settings = {
+      yaml = {
+        keyOrdering = false,
+      },
+    },
+  },
 }
 
 for _, server in ipairs {
@@ -55,16 +50,15 @@ for _, server in ipairs {
   "eslint",
   "gopls",
   "html",
+  "lua_ls",
   "pyright",
   "rust_analyzer",
   "tsserver",
   "vimls",
+  "yamlls",
 } do
-  lspconfig[server].setup {
-    capabilities = capabilities,
-    flags = {
-      debounce_text_changes = 150,
-    },
-    on_attach = on_attach,
-  }
+  local options = {}
+  for k, v in pairs(default_options) do options[k] = v end
+  for k, v in pairs(server_settings[server] or {}) do options[k] = v end
+  lspconfig[server].setup(options)
 end
