@@ -33,7 +33,12 @@ return {
       require("which-key").setup({})
     end,
   },
-  "folke/zen-mode.nvim",
+  {
+    "folke/zen-mode.nvim",
+    keys = {
+      { "<leader>z", ":ZenMode<cr>", { desc = "Toggle Zen mode" }},
+    },
+  },
   {
     "nvim-lua/plenary.nvim",
     lazy = true,
