@@ -24,6 +24,7 @@ return {
 
       { "<leader>ft", ":Telescope tags<cr>", noremap = true },
       { "<leader>fd", ":Telescope diagnostics<cr>", noremap = true },
+      { "<leader>fr", ":Telescope lsp_references<cr>", noremap = true },
 
       { "<leader>fc", ":Telescope git_commits<cr>", noremap = true },
       { "<leader>fb", ":Telescope git_bcommits<cr>", noremap = true },
