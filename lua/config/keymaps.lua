@@ -13,6 +13,8 @@ set("n", "<C-u>", "<C-u>zz", { desc = "Scroll window up (centered)" })
 set("n", "n", "nzzzv", { desc = "Next search match (centered)" })
 set("n", "N", "Nzzzv", { desc = "Previous search match (centered)" })
 
+set("n", "<leader>tm", "<cmd>silent !tmux new-window tm<cr>", { desc = "Run tm" })
+
 -- Editing
 
 set("n", "J", "mzJ`z", { desc = "Join lines" })
