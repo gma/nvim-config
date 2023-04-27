@@ -9,6 +9,8 @@ set("n", "<C-l>", "<C-w>l", { desc = "Move to window to right" })
 
 -- Editing
 
+set("n", "J", "mzJ`z", { desc = "Join lines" })
+
 set("v", "K", ":move '<-2<cr>gv=gv", { desc = "Move selected lines up" })
 set("v", "J", ":move '>+1<cr>gv=gv", { desc = "Move selected lines down" })
 
