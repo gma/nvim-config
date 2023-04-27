@@ -7,6 +7,9 @@ set("n", "<C-j>", "<C-w>j", { desc = "Move to window above" })
 set("n", "<C-k>", "<C-w>k", { desc = "Move to window below" })
 set("n", "<C-l>", "<C-w>l", { desc = "Move to window to right" })
 
+set("n", "<C-d>", "<C-d>zz", { desc = "Scroll window down (centered)" })
+set("n", "<C-u>", "<C-u>zz", { desc = "Scroll window up (centered)" })
+
 -- Editing
 
 set("n", "J", "mzJ`z", { desc = "Join lines" })
