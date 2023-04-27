@@ -37,6 +37,8 @@ end, { desc = "Show / hide whitespace", silent = true })
 
 -- Other
 
+set("n", "<leader>ex", "<cmd>!chmod +x %<cr>", { desc = "Make file executable" })
+
 set("c", "%%", function()
   if vim.fn["getcmdtype"]() == ":" then
     return vim.fn["expand"]("%:h") .. "/"
