@@ -10,6 +10,9 @@ set("n", "<C-l>", "<C-w>l", { desc = "Move to window to right" })
 set("n", "<C-d>", "<C-d>zz", { desc = "Scroll window down (centered)" })
 set("n", "<C-u>", "<C-u>zz", { desc = "Scroll window up (centered)" })
 
+set("n", "n", "nzzzv", { desc = "Next search match (centered)" })
+set("n", "N", "Nzzzv", { desc = "Previous search match (centered)" })
+
 -- Editing
 
 set("n", "J", "mzJ`z", { desc = "Join lines" })
