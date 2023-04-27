@@ -22,6 +22,8 @@ set("n", "J", "mzJ`z", { desc = "Join lines" })
 set("v", "K", ":move '<-2<cr>gv=gv", { desc = "Move selected lines up" })
 set("v", "J", ":move '>+1<cr>gv=gv", { desc = "Move selected lines down" })
 
+set("n", "<leader>S", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gci<Left><Left><Left><Left>", { desc = "Substitute word" })
+
 set("n", "<leader>y", "\"+y", { desc = "Yank to system clipboard" })
 set("v", "<leader>y", "\"+y", { desc = "Yank to system clipboard" })
 set("n", "<leader>Y", "\"+Y", { desc = "Yank lines to system clipboard" })
