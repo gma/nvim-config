@@ -56,6 +56,13 @@ local function setup_completion()
   local cmp = require("cmp")
 
   cmp.setup({
+    sources = {
+      { name = "path" },
+      { name = "nvim_lsp" },
+      { name = "buffer", keyword_length = 3 },
+      { name = "luasnip", keyword_length = 2 },
+      { name = "nvim_lua" },
+    },
     preselect = "item",
     mapping = {
       ["<C-Space>"] = cmp.mapping.complete(),
@@ -102,6 +109,7 @@ return {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-cmdline",
     "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-nvim-lua",
     "hrsh7th/cmp-path",
 
     "L3MON4D3/LuaSnip",
