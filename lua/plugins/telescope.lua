@@ -6,15 +6,16 @@ return {
       { "<C-p>", ":Telescope git_files<cr>", noremap = true },
       { "<leader>ff", ":Telescope find_files<cr>", noremap = true },
 
-      { "<leader>fg", ":Telescope live_grep<cr>", noremap = true },
+      { "<leader>fG", ":Telescope grep_string<cr>", noremap = true },
       {
-        "<leader>fG", function()
+        "<leader>fp", function()
           local builtin = require("telescope.builtin")
           builtin.grep_string({ search = vim.fn.input("grep: ") })
         end,
         noremap = true,
-        desc = "Telescope grep_string",
+        desc = "Telescope grep_string (prompt)",
       },
+      { "<leader>fg", ":Telescope live_grep<cr>", noremap = true },
 
       { "<leader>b", ":Telescope buffers<cr>", noremap = true },
 
