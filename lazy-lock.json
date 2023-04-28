@@ -11,6 +11,7 @@
   "emmet-vim": { "branch": "master", "commit": "def5d57a1ae5afb1b96ebe83c4652d1c03640f4d" },
   "harpoon": { "branch": "master", "commit": "f7040fd0c44e7a4010369136547de5604b9c22a1" },
   "indentpython.vim": { "branch": "master", "commit": "6aaddfde21fe9e7acbe448b92b3cbb67f2fe1fc1" },
+  "kanagawa.nvim": { "branch": "master", "commit": "172d858162c4fdeca9cb2cab56eb4b8237af5df1" },
   "lazy.nvim": { "branch": "main", "commit": "5d3d5fb31dcf2ef6f1bda58972c5adfcbd8ff944" },
   "lsp-zero.nvim": { "branch": "v2.x", "commit": "0457b5d7e6a6c1632fdfafc9d5553ef0138e7088" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "7276ffffcf51a8304b5fd4b81293be4ee010ec47" },

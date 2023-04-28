@@ -9,6 +9,13 @@ end
 
 return {
   {
+    "rebelot/kanagawa.nvim",
+    config = function()
+      -- vim.cmd.colorscheme("kanagawa")
+      -- vim.cmd.highlight("WinSeparator guifg=#444444 guibg=None")
+    end,
+  },
+  {
     "fnune/base16-vim",
     config = function()
       vim.g.base16colorspace = 256
