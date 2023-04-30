@@ -19,9 +19,10 @@ return {
 
       { "<leader>b", ":Telescope buffers<cr>", noremap = true },
 
+      { "<leader>fm", ":Telescope man_pages<cr>", noremap = true },
       { "<leader>fh", ":Telescope help_tags<cr>", noremap = true },
       { "<leader>fC", ":Telescope commands<cr>", noremap = true },
-      { "<leader>fm", ":Telescope keymaps<cr>", noremap = true },
+      { "<leader>fk", ":Telescope keymaps<cr>", noremap = true },
 
       { "<leader>ft", ":Telescope tags<cr>", noremap = true },
       { "<leader>fd", ":Telescope diagnostics<cr>", noremap = true },
