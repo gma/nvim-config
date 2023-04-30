@@ -36,6 +36,7 @@ return {
     cmd = { "G", "Git", "Gread", "Gwrite", "GDelete", "GMove", "GRemove" },
     keys = {
       { "<leader>gs", ":Git<cr>", desc = "Run fugitive" },
+      { "<leader>gl", ":Git log ", desc = "Git log" },
       { "<leader>gf", ":diffget //2<cr>", desc = "Accept left hunk" },
       { "<leader>gj", ":diffget //3<cr>", desc = "Accept right hunk" },
     },
