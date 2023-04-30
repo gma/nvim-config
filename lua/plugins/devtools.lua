@@ -1,3 +1,9 @@
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  group = vim.api.nvim_create_augroup("gma_neoformat", { clear = true }),
+  pattern = {"*.css", "*.js", "*.ts", "*.tsx"},
+  command = "Neoformat"
+})
+
 return {
   {
     "benmills/vimux",
