@@ -19,4 +19,12 @@ return {
     "posva/vim-vue",
     ft = "vue",
   },
+
+  -- TypeScript
+  {
+    "jose-elias-alvarez/typescript.nvim",
+    config = function()
+      require("typescript").setup({})
+    end,
+  },
 }
