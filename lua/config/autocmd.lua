@@ -21,6 +21,15 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   end
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  group = augroup("wrap_spell"),
+  pattern = { "gitcommit", "markdown" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.spell = true
+  end,
+})
+
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   group = augroup("highlight_yank"),
   callback = function() vim.highlight.on_yank() end,
