@@ -54,5 +54,5 @@ vim.g.netrw_banner = 0
 
 opt.guicursor = "n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20"
 opt.laststatus = 2            -- enable global statusline
-opt.signcolumn = "yes"        -- show space where signs appear in the gutter
+opt.signcolumn = "no"         -- show space where signs appear in the gutter
 opt.termguicolors = true      -- enable 24-bit colour
