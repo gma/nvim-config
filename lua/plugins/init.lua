@@ -9,6 +9,13 @@ return {
   },
   {
     "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup({
+        window = {
+          width = 86,
+        },
+      })
+    end,
     keys = {
       { "<leader>z", ":ZenMode<cr>", { desc = "Toggle Zen mode" }},
     },
