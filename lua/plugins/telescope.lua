@@ -32,6 +32,18 @@ return {
       { "<leader>fb", ":Telescope git_bcommits<cr>", noremap = true },
       { "<leader>fl", ":Telescope current_buffer_fuzzy_find sorting_strategy=ascending<cr>", noremap = true },
     },
+    config = function()
+      local actions = require("telescope.actions")
+      require("telescope").setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<esc>"] = actions.close,
+            },
+          },
+        },
+      })
+    end,
     dependencies = {
       "nvim-lua/plenary.nvim",
       {
