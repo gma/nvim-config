@@ -39,6 +39,9 @@ return {
           mappings = {
             i = {
               ["<esc>"] = actions.close,
+              ["<C-u>"] = false,
+              ["<C-b>"] = actions.preview_scrolling_up,
+              ["<C-f>"] = actions.preview_scrolling_down,
             },
           },
         },
