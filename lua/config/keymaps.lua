@@ -35,6 +35,10 @@ set("n", "<leader>s", function()
   vim.o.list = not vim.o.list
 end, { desc = "Show / hide whitespace", silent = true })
 
+set("n", "<leader>ns", function()
+  vim.o.spell = not vim.o.spell
+end, { desc = "Toggle spellchecking", silent = true })
+
 -- Other
 
 set("n", "<leader>ex", "<cmd>!chmod +x %<cr>", { desc = "Make file executable" })
