@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 
 return {
   {
-    "benmills/vimux",
+    "preservim/vimux",
     keys = {
       { "<leader>vp", ":VimuxPromptCommand<cr>", desc = "Run command with vimux" },
       { "<leader>vl", ":VimuxRunLastCommand<cr>", desc = "Repeat last vimux command" },
