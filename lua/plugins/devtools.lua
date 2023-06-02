@@ -10,9 +10,6 @@ return {
     keys = {
       { "<leader>vp", ":VimuxPromptCommand<cr>", desc = "Run command with vimux" },
       { "<leader>vl", ":VimuxRunLastCommand<cr>", desc = "Repeat last vimux command" },
-      { "<leader>vi", ":VimuxInspectRunner<cr>", desc = "Inspect vimux runner" },
-      { "<leader>vq", ":VimuxCloseRunner<cr>", desc = "Close vimux runner" },
-      { "<leader>vc", ":VimuxClearRunnerHistory<cr>", desc = "Clear vimux runner history" },
     }
   },
   {
