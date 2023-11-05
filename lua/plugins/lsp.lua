@@ -11,6 +11,9 @@ local function setup_lsp()
   end
 
   lsp.on_attach(function(client, bufnr)
+    map("<leader>l", ":LspStop<CR>", "Stop LSP client")
+    map("<leader>L", ":LspStart<CR>", "Start LSP client")
+
     map("K", vim.lsp.buf.hover, "Show info in window")
     map("gd", vim.lsp.buf.definition, "Jump to definition")
     map("gD", vim.lsp.buf.declaration, "Jump to declaration")
