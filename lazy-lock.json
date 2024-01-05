@@ -33,6 +33,7 @@
   "vim-endwise": { "branch": "master", "commit": "e714ac3bcfd5a90038de49c3254eded7c70ae3c3" },
   "vim-fugitive": { "branch": "master", "commit": "46eaf8918b347906789df296143117774e827616" },
   "vim-git": { "branch": "master", "commit": "105fd5559bd9df3f1204ecdcac2a587614e1a4be" },
+  "vim-indent-object": { "branch": "master", "commit": "5c5b24c959478929b54a9e831a8e2e651a465965" },
   "vim-javascript": { "branch": "master", "commit": "c470ce1399a544fe587eab950f571c83cccfbbdc" },
   "vim-jinja": { "branch": "master", "commit": "7c54e2320c5f676636cdd8697480782eebfb2bf2" },
   "vim-jsx-pretty": { "branch": "master", "commit": "6989f1663cc03d7da72b5ef1c03f87e6ddb70b41" },
