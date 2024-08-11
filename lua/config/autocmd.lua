@@ -51,7 +51,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup("wrap_spell"),
-  pattern = { "gitcommit", "markdown", "text" },
+  pattern = { "gitcommit", "text" },
   callback = function()
     vim.opt_local.textwidth = 72            -- right margin to use when wrapping text
     vim.opt_local.wrap = true
