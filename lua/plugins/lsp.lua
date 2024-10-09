@@ -44,7 +44,7 @@ local function setup_lsp()
     "html",
     "pyright",
     "rust_analyzer",
-    "tsserver",
+    "ts_ls",
     "vimls",
     "yamlls",
   })
