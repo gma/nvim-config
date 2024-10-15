@@ -7,3 +7,5 @@
 # directory.
 
 mkdir -p ~/.config && ln -sf "$PWD" ~/.config/nvim
+
+echo "defaut-dark" > ~/.config/base16-theme
