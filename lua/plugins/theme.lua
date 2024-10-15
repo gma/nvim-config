@@ -11,7 +11,7 @@ return {
   {
     "fnune/base16-vim",
     config = function()
-      vim.g.base16colorspace = 256
+      vim.g.base16_colorspace = 256
       vim.cmd.colorscheme(colorscheme_theme())
       vim.cmd.highlight("WinSeparator guifg=#444444 guibg=None")
     end,
