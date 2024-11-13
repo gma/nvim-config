@@ -89,6 +89,11 @@ local function setup_completion()
     {
       { name = "cmdline", keyword_length = 3, },
     }),
+    view = {
+      entries = {
+        name = "wildmenu",
+      },
+    },
   })
 end
 
