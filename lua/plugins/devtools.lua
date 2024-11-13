@@ -16,7 +16,7 @@ return {
     "itspriddle/vim-shellcheck",
     ft = "sh",
   },
-  "jremmen/vim-ripgrep",
+  "duane9/nvim-rg",
   {
     "sbdchd/neoformat",
     cmd = "Neoformat",
