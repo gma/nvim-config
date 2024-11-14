@@ -5,6 +5,7 @@ return {
     keys = {
       { "<C-p>", ":Telescope git_files<cr>", noremap = true },
       { "<leader>ff", ":Telescope find_files<cr>", noremap = true },
+      { "<leader><leader>", ":Telescope oldfiles<cr>", noremap = true },
 
       { "<leader>fG", ":Telescope grep_string<cr>", noremap = true },
       {
