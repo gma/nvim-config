@@ -1,4 +1,4 @@
-vim.g.mapleader = ","
+vim.g.mapleader = " "
 
 require("setup-lazy-nvim")
 require("lazy").setup("plugins", {
