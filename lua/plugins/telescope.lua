@@ -3,6 +3,8 @@ return {
     "nvim-telescope/telescope.nvim",
     branch = "0.1.x",
     keys = {
+      { "<leader>fT", ":Telescope builtin<cr>", noremap = true },
+
       { "<C-p>", ":Telescope git_files<cr>", noremap = true },
       { "<leader>ff", ":Telescope find_files<cr>", noremap = true },
       { "<leader><leader>", ":Telescope oldfiles<cr>", noremap = true },
