@@ -22,8 +22,4 @@ return {
     "tpope/vim-rake",
     ft = { "ruby" },
   },
-  {
-    "vim-ruby/vim-ruby",
-    ft = { "ruby" },
-  },
 }
