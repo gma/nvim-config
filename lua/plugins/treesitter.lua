@@ -26,9 +26,6 @@ return {
         },
       }
     end,
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter-context",
-    },
   },
   {
     "nvim-treesitter/playground",
