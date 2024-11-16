@@ -25,7 +25,7 @@ return {
 
       { "<C-p>", git_files_or_find_files, noremap = true },
       { "<leader>ff", ":Telescope find_files<cr>", noremap = true },
-      { "<leader><leader>", ":Telescope oldfiles<cr>", noremap = true },
+      { "<leader><leader>", ":Telescope oldfiles only_cwd=true<cr>", noremap = true },
 
       { "<leader>fG", ":Telescope grep_string<cr>", noremap = true },
       {
