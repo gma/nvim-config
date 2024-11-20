@@ -62,10 +62,6 @@ return {
         pickers = {
           find_files = {
             hidden = true,
-            theme = "dropdown",
-          },
-          git_files = {
-            theme = "dropdown",
           },
         },
         defaults = {
@@ -76,6 +72,11 @@ return {
               ["<C-b>"] = actions.preview_scrolling_up,
               ["<C-f>"] = actions.preview_scrolling_down,
             },
+          },
+          layout_strategy = "flex",
+          sorting_strategy = "ascending",
+          layout_config = {
+            prompt_position = "top",
           },
         },
       })
