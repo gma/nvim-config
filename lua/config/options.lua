@@ -12,6 +12,9 @@ opt.expandtab = true          -- insert spaces instead of tabs
 opt.copyindent = true         -- if this line uses tabs, use them on next line
 opt.preserveindent = true     -- don't replace existing tabs to spaces on re-indent
 
+opt.number = true             -- display current line number in gutter
+opt.relativenumber = true     -- show distance instead of other lines' numbers
+
 opt.autoindent = true
 opt.wrap = false              -- disable line wrapping
 -- opt.hlsearch = true           -- highlight search matches
