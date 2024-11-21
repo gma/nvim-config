@@ -49,7 +49,7 @@ return {
     config = function()
       vim.opt.tags:prepend("./.git/tags;")
     end,
-    cmd = { "G", "Git", "Gread", "Gwrite", "GDelete", "GMove", "GRemove" },
+    lazy = false,
     keys = {
       { "<leader>gs", ":Git<cr>", desc = "Run fugitive" },
       { "<leader>gl", ":Git log ", desc = "Git log" },
