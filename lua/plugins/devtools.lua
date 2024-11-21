@@ -19,8 +19,8 @@ return {
     "preservim/vimux",
     lazy = false,
     keys = {
-      { "<leader>vp", ":VimuxPromptCommand<cr>", desc = "Run command with vimux" },
-      { "<leader>vl", ":VimuxRunLastCommand<cr>", desc = "Repeat last vimux command" },
+      { "<leader>vp", ":VimuxPromptCommand<cr>", desc = "Run command in tmux pane" },
+      { "<leader>vl", ":VimuxRunLastCommand<cr>", desc = "Re-run last command" },
     },
     config = function()
       vim.g["test#strategy"] = "vimux"
