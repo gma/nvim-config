@@ -55,5 +55,5 @@ vim.g.netrw_banner = 0
 -- config. The following are only supported by Neovim.
 
 opt.laststatus = 2            -- enable global statusline
-opt.signcolumn = "no"         -- show space where signs appear in the gutter
+opt.signcolumn = "yes"        -- show space where signs appear in the gutter
 opt.termguicolors = true      -- enable 24-bit colour
