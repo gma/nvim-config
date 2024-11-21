@@ -5,16 +5,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 })
 
 return {
-  {
-    "vim-test/vim-test",
-    keys = {
-      { "<leader>tn", ":TestNearest<CR>", desc = "Run nearest test" },
-      { "<leader>tf", ":TestFile<CR>", desc = "Run file" },
-      { "<leader>ta", ":TestSuite<CR>", desc = "Run full suite" },
-      { "<leader>tl", ":TestNearest<CR>", desc = "Re-run last" },
-      { "<leader>to", ":TestVisit<CR>", desc = "Navigate back to last test" },
-    },
-  },
+  "duane9/nvim-rg",
   {
     "preservim/vimux",
     lazy = false,
@@ -32,7 +23,6 @@ return {
     "itspriddle/vim-shellcheck",
     ft = "sh",
   },
-  "duane9/nvim-rg",
   {
     "sbdchd/neoformat",
     cmd = "Neoformat",
@@ -56,4 +46,14 @@ return {
   },
   "tpope/vim-git",
   "tpope/vim-projectionist",
+  {
+    "vim-test/vim-test",
+    keys = {
+      { "<leader>tn", ":TestNearest<CR>", desc = "Run nearest test" },
+      { "<leader>tf", ":TestFile<CR>", desc = "Run file" },
+      { "<leader>ta", ":TestSuite<CR>", desc = "Run full suite" },
+      { "<leader>tl", ":TestNearest<CR>", desc = "Re-run last" },
+      { "<leader>to", ":TestVisit<CR>", desc = "Navigate back to last test" },
+    },
+  },
 }
