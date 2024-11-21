@@ -6,11 +6,27 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 
 return {
   {
+    "vim-test/vim-test",
+    keys = {
+      { "<leader>tn", ":TestNearest<CR>", desc = "Run nearest test" },
+      { "<leader>tf", ":TestFile<CR>", desc = "Run file" },
+      { "<leader>ta", ":TestSuite<CR>", desc = "Run full suite" },
+      { "<leader>tl", ":TestNearest<CR>", desc = "Re-run last" },
+      { "<leader>to", ":TestVisit<CR>", desc = "Navigate back to last test" },
+    },
+  },
+  {
     "preservim/vimux",
+    lazy = false,
     keys = {
       { "<leader>vp", ":VimuxPromptCommand<cr>", desc = "Run command with vimux" },
       { "<leader>vl", ":VimuxRunLastCommand<cr>", desc = "Repeat last vimux command" },
-    }
+    },
+    config = function()
+      vim.g["test#strategy"] = "vimux"
+      vim.g["test#echo_command"] = 0
+      vim.g["test#preserve_screen"] = 1
+    end
   },
   {
     "itspriddle/vim-shellcheck",
