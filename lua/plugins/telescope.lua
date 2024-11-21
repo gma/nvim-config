@@ -102,7 +102,12 @@ return {
       require("telescope").load_extension("file_browser")
     end,
     keys = {
-      { "<leader>B", ":Telescope file_browser sorting_strategy=ascending<cr>", noremap = true },
+      {
+        "<leader>B",
+        ":Telescope file_browser sorting_strategy=ascending<cr>",
+        desc = "Telescope file browser",
+        noremap = true,
+      },
     },
     dependencies = { "nvim-telescope/telescope.nvim" },
   },
