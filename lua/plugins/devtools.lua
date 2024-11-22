@@ -53,7 +53,7 @@ return {
     keys = {
       { "<leader>gs", ":vert Git<cr>", desc = "Run fugitive (to side)" },
       { "<leader>gS", ":Git<cr>", desc = "Run fugitive (below)" },
-      { "<leader>gl", ":Git log ", desc = "Git log" },
+      { "<leader>gl", ":vert Git log ", desc = "Git log" },
       { "<leader>gf", ":diffget //2<cr>", desc = "Accept left hunk" },
       { "<leader>gj", ":diffget //3<cr>", desc = "Accept right hunk" },
     },
