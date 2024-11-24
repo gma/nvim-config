@@ -76,10 +76,15 @@ return {
           layout_strategy = "flex",
           sorting_strategy = "ascending",
           layout_config = {
+            flip_columns = 130,
             prompt_position = "top",
             horizontal = {
-              preview_width = 0.5,
+              preview_width = 0.6,
               width = 0.9,
+            },
+            vertical = {
+              preview_cutoff = 30,
+              preview_height = 0.3,
             },
           },
         },
