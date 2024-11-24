@@ -28,7 +28,7 @@ return {
     keys = {
       { "[h", ":Gitsigns prev_hunk<CR>", desc = "Go to previous hunk" },
       { "]h", ":Gitsigns next_hunk<CR>", desc = "Go to next hunk" },
-      { "<leader>gp", ":Gitsigns preview_hunk<CR>", desc = "Preview hunk" },
+      { "<leader>gp", ":Gitsigns preview_hunk<CR>:Gitsigns preview_hunk<CR>", desc = "Preview hunk" },
       { "<leader>gb", ":Gitsigns blame_line<CR>", desc = "Show blame for line" },
     },
     lazy = false,
