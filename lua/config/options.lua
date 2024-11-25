@@ -47,6 +47,8 @@ opt.wildignore = "tmp/cache/**"
 opt.colorcolumn = "80"
 opt.cursorline = true
 
+opt.undofile = true           -- save buffer-specific undo history in ~/.local
+
 vim.g.netrw_banner = 0
 
 -- Neovim specific settings
