@@ -18,7 +18,6 @@ It includes:
   plugins, and a handful of ThePrimeagen's keymaps)
 - The excellent which-key plugin to remind you what all the useful keymaps are
 - A handful of autocommands that make daily life that little bit smoother
-- The base16 colour schemes (I usually use "woodland")
 
 If you find yourself wondering how something works, check the message of the
 commit that added it (e.g. with `git log -S`). I like to leave "future me"
