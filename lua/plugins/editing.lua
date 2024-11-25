@@ -14,7 +14,9 @@ return {
   {
     "mbbill/undotree",
     cmd = "UndotreeToggle",
-    keys = { "<f5>", ":UndotreeToggle", mode = "n", desc = "Toggle Undotree" },
+    keys = {
+      { "<leader>u", ":UndotreeToggle<CR>", mode = "n", desc = "Toggle Undotree" },
+    },
   },
   "michaeljsmith/vim-indent-object",
   "tpope/vim-endwise",
