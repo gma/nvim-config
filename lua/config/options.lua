@@ -44,6 +44,7 @@ opt.wildmenu = true           -- nice tab completion just above the status bar
 opt.wildmode = { list = "full" } -- tab completes common prefix, but lists choices
 opt.wildignore = "tmp/cache/**"
 
+opt.cmdheight = 0             -- hide cmdline when not in use
 opt.colorcolumn = "80"
 opt.cursorline = true
 
