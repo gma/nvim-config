@@ -69,7 +69,7 @@ local function setup_completion()
     preselect = "item",
     mapping = {
       ["<C-Space>"] = cmp.mapping.complete(),
-      ["<Tab>"] = cmp.mapping.confirm({ select = true }),
+      ["<C-y>"] = cmp.mapping.confirm({ select = true }),
     },
   })
 
