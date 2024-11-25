@@ -48,6 +48,7 @@ opt.colorcolumn = "80"
 opt.cursorline = true
 
 opt.undofile = true           -- save buffer-specific undo history in ~/.local
+opt.updatetime = 1000         -- milliseconds between writing to swap file
 
 vim.g.netrw_banner = 0
 
