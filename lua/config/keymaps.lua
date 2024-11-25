@@ -23,6 +23,10 @@ set("v", "K", ":move '<-2<cr>gv=gv", { desc = "Move selected lines up" })
 set("v", "J", ":move '>+1<cr>gv=gv", { desc = "Move selected lines down" })
 
 set("n", "<leader>S", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gci<Left><Left><Left><Left>", { desc = "Substitute word" })
+
+-- For removing/replacing something without clobbering paste buffer
+set("n", "<leader>d", "\"_d", { desc = "Delete to void register" })
+set("v", "<leader>d", "\"_d", { desc = "Delete to void register" })
 set("v", "<leader>p", "\"_dP", { desc = "Paste via void register" })
 
 set("n", "<leader>y", "\"+y", { desc = "Yank to system clipboard" })
