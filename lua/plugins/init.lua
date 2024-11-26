@@ -25,6 +25,10 @@ return {
     },
   },
   {
+    "laytan/cloak.nvim",
+    opts = {},
+  },
+  {
     "nvim-lua/plenary.nvim",
     lazy = true,
   },
