@@ -45,6 +45,9 @@ return {
       { "<leader>fC", ":Telescope commands<cr>", noremap = true },
       { "<leader>fk", ":Telescope keymaps<cr>", noremap = true },
 
+      { "<leader>fM", ":Telescope marks<cr>", noremap = true },
+      { "<leader>fR", ":Telescope registers<cr>", noremap = true },
+
       { "<leader>ft", ":Telescope tags<cr>", noremap = true },
       { "<leader>fd", ":Telescope diagnostics<cr>", noremap = true },
       { "<leader>fr", ":Telescope lsp_references<cr>", noremap = true },
