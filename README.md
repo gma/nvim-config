@@ -43,7 +43,6 @@ from Cargo (if you have Rust configured):
     $ npm install -g tree-sitter-cli
 
 [Neovim]: https://neovim.io
-[Vim 8 repository]: https://github.com/gma/dotvim
 
 Usage tips
 ----------
