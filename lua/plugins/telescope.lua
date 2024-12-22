@@ -54,6 +54,7 @@ return {
 
       { "<leader>fc", ":Telescope git_commits<cr>", noremap = true },
       { "<leader>fb", ":Telescope git_bcommits<cr>", noremap = true },
+      { "<leader>fB", ":Telescope git_branches<cr>", noremap = true },
       { "<leader>fl", ":Telescope current_buffer_fuzzy_find sorting_strategy=ascending<cr>", noremap = true },
 
       { "<leader>f<Up>", ":Telescope command_history<cr>", noremap = true },
