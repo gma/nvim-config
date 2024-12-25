@@ -126,12 +126,14 @@ local define_telescope_keymaps = function()
     desc = "Search keymaps"
   })
 
-  vim.keymap.set("n", "<leader>fn", function()
-    builtin.find_files({ cwd = vim.fn.stdpath('config') })
-  end, {
-    noremap = true,
-    desc = "Find file in Neovim config"
-  })
+  vim.keymap.set("n", "<leader>fvc", function()
+    builtin.find_files({ cwd = vim.fn.stdpath("config") })
+  end, { noremap = true, desc = "Find file in vim config" })
+  vim.keymap.set("n", "<leader>fvp", function()
+    builtin.find_files({
+      cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy")
+    })
+  end, { noremap = true, desc = "Find file in vim plugin" })
 end
 
 return {
