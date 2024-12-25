@@ -16,50 +16,50 @@ local git_files_or_find_files = function()
   end
 end
 
+local run_builtin_grep = function()
+  local builtin = require("telescope.builtin")
+  builtin.grep_string({ search = vim.fn.input("grep: ") })
+end
+
+local define_telescope_keymaps = function()
+  vim.keymap.set("n", "<leader>b", ":Telescope buffers<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fl", ":Telescope current_buffer_fuzzy_find sorting_strategy=ascending<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fT", ":Telescope builtin<cr>", { noremap = true })
+  vim.keymap.set("n", "<C-p>", git_files_or_find_files, { noremap = true })
+  vim.keymap.set("n", "<leader>ff", ":Telescope find_files<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader><leader>", ":Telescope oldfiles only_cwd=true<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fG", ":Telescope grep_string<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fp", run_builtin_grep, { noremap = true, desc = "Telescope grep_string (prompt)" })
+  vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fM", ":Telescope marks<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fR", ":Telescope registers<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>ft", ":Telescope tags<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fr", ":Telescope lsp_references<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fd", ":Telescope diagnostics<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fc", ":Telescope git_commits<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fb", ":Telescope git_bcommits<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fB", ":Telescope git_branches<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>f<Up>", ":Telescope command_history<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>f/", ":Telescope search_history<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fm", ":Telescope man_pages sections={'ALL'}<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fC", ":Telescope commands<cr>", { noremap = true })
+  vim.keymap.set("n", "<leader>fk", ":Telescope keymaps<cr>", { noremap = true })
+end
+
 return {
   {
     "nvim-telescope/telescope.nvim",
     branch = "0.1.x",
-    keys = {
-      { "<leader>fT", ":Telescope builtin<cr>", noremap = true },
-
-      { "<C-p>", git_files_or_find_files, noremap = true },
-      { "<leader>ff", ":Telescope find_files<cr>", noremap = true },
-      { "<leader><leader>", ":Telescope oldfiles only_cwd=true<cr>", noremap = true },
-
-      { "<leader>fG", ":Telescope grep_string<cr>", noremap = true },
-      {
-        "<leader>fp", function()
-          local builtin = require("telescope.builtin")
-          builtin.grep_string({ search = vim.fn.input("grep: ") })
-        end,
-        noremap = true,
-        desc = "Telescope grep_string (prompt)",
-      },
-      { "<leader>fg", ":Telescope live_grep<cr>", noremap = true },
-
-      { "<leader>b", ":Telescope buffers<cr>", noremap = true },
-
-      { "<leader>fm", ":Telescope man_pages sections={'ALL'}<cr>", noremap = true },
-      { "<leader>fh", ":Telescope help_tags<cr>", noremap = true },
-      { "<leader>fC", ":Telescope commands<cr>", noremap = true },
-      { "<leader>fk", ":Telescope keymaps<cr>", noremap = true },
-
-      { "<leader>fM", ":Telescope marks<cr>", noremap = true },
-      { "<leader>fR", ":Telescope registers<cr>", noremap = true },
-
-      { "<leader>ft", ":Telescope tags<cr>", noremap = true },
-      { "<leader>fd", ":Telescope diagnostics<cr>", noremap = true },
-      { "<leader>fr", ":Telescope lsp_references<cr>", noremap = true },
-
-      { "<leader>fc", ":Telescope git_commits<cr>", noremap = true },
-      { "<leader>fb", ":Telescope git_bcommits<cr>", noremap = true },
-      { "<leader>fB", ":Telescope git_branches<cr>", noremap = true },
-      { "<leader>fl", ":Telescope current_buffer_fuzzy_find sorting_strategy=ascending<cr>", noremap = true },
-
-      { "<leader>f<Up>", ":Telescope command_history<cr>", noremap = true },
-      { "<leader>f/", ":Telescope search_history<cr>", noremap = true },
-    },
+    lazy = false,
     config = function()
       local actions = require("telescope.actions")
       require("telescope").setup({
@@ -93,6 +93,8 @@ return {
           },
         },
       })
+
+      define_telescope_keymaps()
     end,
     dependencies = {
       "nvim-lua/plenary.nvim",
