@@ -47,10 +47,6 @@ local define_telescope_keymaps = function()
     desc = "Recent files"
   })
 
-  vim.keymap.set("n", "<leader>fg", builtin.live_grep, {
-    noremap = true,
-    desc = "Live grep"
-  })
   vim.keymap.set("n", "<leader>fG", builtin.grep_string, {
     noremap = true,
     desc = "Telescope grep (word)"
@@ -176,6 +172,7 @@ return {
       })
 
       define_telescope_keymaps()
+      require("config.telescope.ripgrep").setup()
     end,
     dependencies = {
       "nvim-lua/plenary.nvim",
