@@ -53,6 +53,10 @@ local define_telescope_keymaps = function()
   vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<cr>", { noremap = true })
   vim.keymap.set("n", "<leader>fC", ":Telescope commands<cr>", { noremap = true })
   vim.keymap.set("n", "<leader>fk", ":Telescope keymaps<cr>", { noremap = true })
+
+  vim.keymap.set("n", "<leader>fn", function()
+    require("telescope.builtin").find_files({ cwd = vim.fn.stdpath('config') })
+  end, { noremap = true, desc = "Find file in Neovim config" })
 end
 
 return {
