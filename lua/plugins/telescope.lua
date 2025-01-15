@@ -26,9 +26,9 @@ local define_telescope_keymaps = function()
   vim.keymap.set("n", "<leader>fl", function()
     builtin.current_buffer_fuzzy_find({ sorting_strategy = "ascending" })
   end, {
-  noremap = true,
-  desc = "Find line in buffer"
-})
+    noremap = true,
+    desc = "Find line in buffer"
+  })
   vim.keymap.set("n", "<leader>fT", builtin.builtin, {
     noremap = true,
     desc = "Find Telescope builtins"
