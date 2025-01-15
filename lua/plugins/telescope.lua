@@ -1,7 +1,7 @@
-local builtin = require("telescope.builtin")
 local is_inside_work_tree = {}
 
 local git_files_or_find_files = function()
+  local builtin = require("telescope.builtin")
   local opts = {} -- define here if you want to define something
 
   local cwd = vim.fn.getcwd()
@@ -18,6 +18,7 @@ local git_files_or_find_files = function()
 end
 
 local define_telescope_keymaps = function()
+  local builtin = require("telescope.builtin")
   vim.keymap.set("n", "<leader>b", builtin.buffers, {
     noremap = true,
     desc = "Find buffer"
