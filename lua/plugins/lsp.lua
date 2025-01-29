@@ -31,7 +31,7 @@ local function setup_lsp()
     -- My preferred alternatives to some defaults
     map("<leader>r", vim.lsp.buf.rename, "Rename symbol")
     map("g=", vim.lsp.buf.format, "Format buffer")
-    map("ca", vim.lsp.buf.code_action, "Select code action")
+    map("<leader>ca", vim.lsp.buf.code_action, "Select code action")
   end)
 
   lsp.setup_servers({
