@@ -58,6 +58,7 @@ return {
       { "<leader>gj", ":diffget //3<cr>", desc = "Accept right hunk" },
     },
   },
+  "RRethy/nvim-treesitter-endwise",
   "tpope/vim-git",
   "tpope/vim-projectionist",
   {
