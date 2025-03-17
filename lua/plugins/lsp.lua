@@ -43,7 +43,6 @@ local function setup_lsp()
     "gopls",
     "html",
     "pyright",
-    "ruby_lsp",
     "rust_analyzer",
     "vimls",
     "yamlls",
