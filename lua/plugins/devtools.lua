@@ -64,10 +64,10 @@ return {
   {
     "vim-test/vim-test",
     keys = {
-      { "<leader>tn", ":TestNearest<CR>", desc = "Run nearest test" },
+      { "<leader>tl", ":TestNearest<CR>", desc = "Run nearest test" },
       { "<leader>tf", ":TestFile<CR>", desc = "Run file" },
       { "<leader>ta", ":TestSuite<CR>", desc = "Run full suite" },
-      { "<leader>tl", ":TestNearest<CR>", desc = "Re-run last" },
+      { "<leader>tt", ":TestNearest<CR>", desc = "Re-run last" },
       { "<leader>to", ":TestVisit<CR>", desc = "Navigate back to last test" },
     },
   },
