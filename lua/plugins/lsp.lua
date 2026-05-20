@@ -42,6 +42,7 @@ local function setup_lsp()
     "eslint",
     "gopls",
     "html",
+    "lua_ls",
     "pyright",
     "rust_analyzer",
     "vimls",
