@@ -16,11 +16,22 @@ return {
           "vimdoc",
         },
         ensure_installed = {
+          "bash",
+          "css",
+          "git_config",
+          "git_rebase",
+          "gitattributes",
+          "gitcommit",
+          "gitignore",
+          "go",
+          "html",
           "javascript",
           "python",
           "query",
           "ruby",
+          "rust",
           "typescript",
+          "yaml",
         }
       })
     end,
