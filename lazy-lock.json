@@ -13,6 +13,7 @@
   "gitsigns.nvim": { "branch": "main", "commit": "eb60cc7b94c46005237fd34170d76f3a089a90aa" },
   "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },
   "indentpython.vim": { "branch": "master", "commit": "6aaddfde21fe9e7acbe448b92b3cbb67f2fe1fc1" },
+  "kanagawa": { "branch": "master", "commit": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "lsp-zero.nvim": { "branch": "v2.x", "commit": "e31028f1dba6f7b68a8b9dd3347c489ee4cd3026" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "47059d71b42d74b0a1e9f61c1d99d301039c3b5b" },
