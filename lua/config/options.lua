@@ -19,6 +19,7 @@ opt.autoindent = true
 opt.wrap = false              -- disable line wrapping
 -- opt.hlsearch = true           -- highlight search matches
 opt.incsearch = true          -- incremental search
+opt.inccommand = "split"      -- preview :s/a/b/ substitution in split
 opt.ignorecase = true         -- case insensitive search...
 opt.smartcase = true          -- ...unless you use a capital in your search
 
