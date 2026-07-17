@@ -42,7 +42,7 @@ opt.dictionary:append("/usr/share/dict/words")  -- useful for <C-x> <C-k> comple
 
 opt.path = { ".", "", "**" }  -- enable :find to search beneath cwd
 opt.wildmenu = true           -- nice tab completion just above the status bar
-opt.wildmode = { list = "full" } -- tab completes common prefix, but lists choices
+opt.wildmode = "full:lastused"
 opt.wildignore = "tmp/cache/**"
 
 opt.colorcolumn = "80"
