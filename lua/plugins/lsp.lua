@@ -15,7 +15,7 @@ return {
           "pyright",
           "rust_analyzer",
           "ts_ls",
-          "vimls",
+          "vimls",						-- for vimscript, not for Neovim's Lua API
           "yamlls",
         },
       },
