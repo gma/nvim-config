@@ -1,5 +1,4 @@
 {
-  "ansible-vim": { "branch": "master", "commit": "6c42a448e30bc48ae98792bce38970148b0e3c9d" },
   "black": { "branch": "main", "commit": "51abf53080b09eab12143727641ff1e2cd39d8c9" },
   "catppuccin": { "branch": "main", "commit": "05e8787020dcfdb937bf2ff23855ea2415b4e072" },
   "cloak.nvim": { "branch": "main", "commit": "648aca6d33ec011dc3166e7af3b38820d01a71e4" },
