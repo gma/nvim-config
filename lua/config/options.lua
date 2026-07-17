@@ -44,6 +44,7 @@ opt.path = { ".", "", "**" }  -- enable :find to search beneath cwd
 opt.wildmenu = true           -- nice tab completion just above the status bar
 opt.wildmode = "full:lastused"
 opt.wildignore = "tmp/cache/**"
+opt.wildoptions = "pum,tagfile"
 
 opt.colorcolumn = "80"
 opt.cursorline = true
@@ -61,3 +62,6 @@ vim.g.netrw_banner = 0
 opt.laststatus = 2            -- enable global statusline
 opt.signcolumn = "yes"        -- show space where signs appear in the gutter
 opt.termguicolors = true      -- enable 24-bit colour
+
+opt.complete = { ".", "w", "b", "u", "t" }
+opt.completeopt = { "fuzzy", "menu", "menuone", "popup" }
