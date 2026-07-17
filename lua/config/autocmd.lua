@@ -59,6 +59,20 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.api.nvim_create_autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup("lsp_keymaps", { clear = true }),
+  callback = function(event)
+    local client = assert(vim.lsp.get_client_by_id(event.data.client_id))
+    local function map(lhs, rhs, desc, mode)
+      vim.keymap.set(mode or "n", lhs, rhs, { buffer = event.buf, desc = desc })
+    end
+
+    if client:supports_method("textDocument/formatting") then
+      map("grf", function() vim.lsp.buf.format({ async = true }) end)
+    end
+  end
+})
+
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   group = augroup("highlight_yank"),
   callback = function() vim.highlight.on_yank() end,
