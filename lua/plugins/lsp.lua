@@ -13,6 +13,7 @@ return {
           "html",
           "lua_ls",
           "pyright",
+          "ruby_lsp",
           "rust_analyzer",
           "ts_ls",
           "vimls",						-- for vimscript, not for Neovim's Lua API
