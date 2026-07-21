@@ -62,4 +62,4 @@ vim.opt.signcolumn = "yes"        -- show space where signs appear in the gutter
 vim.opt.termguicolors = true      -- enable 24-bit colour
 
 vim.opt.complete = { ".", "w", "b", "u", "t" }
-vim.opt.completeopt = { "fuzzy", "menu", "menuone", "popup" }
+vim.opt.completeopt = { "menu", "menuone", "popup" }
